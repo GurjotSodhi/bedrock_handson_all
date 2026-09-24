@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "strands": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "strands-agents-mcp-server"
+      ],
+      "env": {}
+    },
+    "aws-knowledge-mcp-server": {
+      "type": "http",
+      "url": "https://knowledge-mcp.global.api.aws"
+    }
+  }
+}

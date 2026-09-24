@@ -1,0 +1,8 @@
+bedrock-agentcore < 2
+strands-agents < 2
+Pillow < 13
+chromadb==1.4.0
+matplotlib < 4
+streamlit < 2
+mcp-proxy-for-aws < 2
+bedrock-agentcore-starter-toolkit

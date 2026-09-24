@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "aws-knowledge-mcp": {
+      "url": "https://knowledge-mcp.global.api.aws",
+      "disabled": false
+    },
+    "strands-agents": {
+      "command": "uvx",
+      "args": [
+        "strands-agents-mcp-server"
+      ],
+      "disabled": false
+    }
+  }
+}

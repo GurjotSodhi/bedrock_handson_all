@@ -1,0 +1,252 @@
+[
+    {
+        "role": "user",
+        "content": [
+            {
+                "text": "What is the tangent of 1.12315? Provide accuracy to 5 places."
+            }
+        ]
+    },
+    {
+        "role": "assistant",
+        "content": [
+            {
+                "text": "Ah, you dare challenge me to compute the tangent of 1.12315, foolish mortal?!"
+            },
+            {
+                "toolUse": {
+                    "toolUseId": "tooluse_sw-kvBifSbq8UpdHBHpeDA",
+                    "name": "sine",
+                    "input": {
+                        "x": 1.12315
+                    }
+                }
+            },
+            {
+                "toolUse": {
+                    "toolUseId": "tooluse_ytVQpLyWTA6EYWYuVgDsRA",
+                    "name": "cosine",
+                    "input": {
+                        "x": 1.12315
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "role": "user",
+        "content": [
+            {
+                "toolResult": {
+                    "toolUseId": "tooluse_sw-kvBifSbq8UpdHBHpeDA",
+                    "status": "success",
+                    "content": [
+                        {
+                            "text": "0.9014683739930456"
+                        }
+                    ]
+                }
+            },
+            {
+                "toolResult": {
+                    "toolUseId": "tooluse_ytVQpLyWTA6EYWYuVgDsRA",
+                    "status": "success",
+                    "content": [
+                        {
+                            "text": "0.43284497304500896"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "role": "assistant",
+        "content": [
+            {
+                "text": "Now I shall divide sine by cosine to unleash the tangent upon you!"
+            },
+            {
+                "toolUse": {
+                    "toolUseId": "tooluse_Cisf53LBQTejGDVOqLWJyw",
+                    "name": "divide",
+                    "input": {
+                        "x": 0.9014683739930456,
+                        "y": 0.43284497304500896
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "role": "user",
+        "content": [
+            {
+                "toolResult": {
+                    "toolUseId": "tooluse_Cisf53LBQTejGDVOqLWJyw",
+                    "status": "success",
+                    "content": [
+                        {
+                            "text": "2.082658758056796"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "role": "assistant",
+        "content": [
+            {
+                "text": "BEHOLD, the tangent of 1.12315 is **2.08266** to five decimal places, and with this knowledge you shall tremble before my mathematical supremacy!"
+            }
+        ]
+    },
+    {
+        "role": "user",
+        "content": [
+            {
+                "text": "What is the cotangent?"
+            }
+        ]
+    },
+    {
+        "role": "assistant",
+        "content": [
+            {
+                "text": "Mwahahaha, now you wish to know the cotangent, the reciprocal of my previous calculation?!"
+            },
+            {
+                "toolUse": {
+                    "toolUseId": "tooluse_3nZ2ZVseSue6EwAQwaUv7Q",
+                    "name": "divide",
+                    "input": {
+                        "x": 1,
+                        "y": 2.082658758056796
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "role": "user",
+        "content": [
+            {
+                "toolResult": {
+                    "toolUseId": "tooluse_3nZ2ZVseSue6EwAQwaUv7Q",
+                    "status": "success",
+                    "content": [
+                        {
+                            "text": "0.48015547248510365"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "role": "assistant",
+        "content": [
+            {
+                "text": "The cotangent of 1.12315 is **0.48016** to five decimal places, you pitiful calculator-dependent peasant!"
+            }
+        ]
+    },
+    {
+        "role": "user",
+        "content": [
+            {
+                "text": "agent.tool.divide direct tool call.\nInput parameters: {\"x\": 2, \"y\": 3.5}\n"
+            }
+        ]
+    },
+    {
+        "role": "assistant",
+        "content": [
+            {
+                "toolUse": {
+                    "toolUseId": "tooluse_divide_558528310",
+                    "name": "divide",
+                    "input": {
+                        "x": 2,
+                        "y": 3.5
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "role": "user",
+        "content": [
+            {
+                "toolResult": {
+                    "toolUseId": "tooluse_divide_558528310",
+                    "status": "success",
+                    "content": [
+                        {
+                            "text": "0.5714285714285714"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "role": "assistant",
+        "content": [
+            {
+                "text": "agent.tool.divide was called."
+            }
+        ]
+    },
+    {
+        "role": "user",
+        "content": [
+            {
+                "text": "What is 3 / 0?"
+            }
+        ]
+    },
+    {
+        "role": "assistant",
+        "content": [
+            {
+                "text": "Ah, you attempt to trick me with division by zero, the forbidden operation that shall destroy my calculations?!"
+            },
+            {
+                "toolUse": {
+                    "toolUseId": "tooluse_SKgWkCMkQreAaf5LwSH5Fw",
+                    "name": "divide",
+                    "input": {
+                        "x": 3,
+                        "y": 0
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "role": "user",
+        "content": [
+            {
+                "toolResult": {
+                    "toolUseId": "tooluse_SKgWkCMkQreAaf5LwSH5Fw",
+                    "status": "error",
+                    "content": [
+                        {
+                            "text": "Error: ZeroDivisionError - division by zero"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "role": "assistant",
+        "content": [
+            {
+                "text": "CURSE YOU, the division by zero has thwarted my evil schemes with a ZeroDivisionError, but I shall have my revenge!"
+            }
+        ]
+    }
+]
